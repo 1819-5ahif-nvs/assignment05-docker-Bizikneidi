@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="microprofile_kneidinger:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>microprofile_kneidinger</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="microprofile.war">
+      <element id="artifact" artifact-name="microprofile_kneidinger:war exploded" />
+    </root>
+  </artifact>
+</component>
