@@ -13,4 +13,4 @@ while ! mysql -h mysql -u"root" -p"example" -e "show databases;"; do
     fi;
 done
 echo "yeah, mysql available, so lets go..."
-java $JAVA_TOOL_OPTIONS -jar target/microprofile-thorntail.jar
+java -jar target/microprofile-thorntail.jar

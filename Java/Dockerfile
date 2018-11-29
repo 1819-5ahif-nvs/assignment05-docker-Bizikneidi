@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 WORKDIR /data
 
-# ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
-# ENV ENV JAVA_TOOL_OPTIONS="-D java.net.preferIPv4Stack=true -D java.net.preferIPv4Addresses=true"
+# ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk
+ENV JAVA_TOOL_OPTIONS="-Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses=true"
 
 CMD /bin/bash wait.sh
